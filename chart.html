@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>
+            RESTful Routes
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <div class="jumbotron">
+                        <h1>RESTful Routes</h1>
+                        <p>A table for all 7 RESTful Routes.</p>
+                    </div>
+                     <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Path</th>
+                                    <th>HTTP</th>
+                                    <th>Purpose</th>
+                                    <th>Mongoose Methods</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Index</td>
+                                    <td>/blogs</td>
+                                    <td>GET</td>
+                                    <td>List all blog post</td>
+                                    <td>Blog.find()</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>New</td>
+                                    <td>/blogs/new</td>
+                                    <td>GET</td>
+                                    <td>new blog post</td>
+                                    <td>N/A</td>
+                                </tr>
+                                
+                                <tr class="success">
+                                    <td>Create</td>
+                                    <td>/blogs</td>
+                                    <td>POST</td>
+                                    <td>creat a new post, then redirect to somewhere</td>
+                                    <td>Blog.create()</td>
+                                </tr>
+                                
+                                <tr class="info">
+                                    <td>Show</td>
+                                    <td>/dogs/:id</td>
+                                    <td>GET</td>
+                                    <td>Show info about a specific post</td>
+                                    <td>Blog.findById()</td>
+                                </tr>
+                                
+                                <tr class="warning">
+                                    <td>Edit</td>
+                                    <td>/blogs/:id/edit</td>
+                                    <td>GET</td>
+                                    <td>Edit a specific post</td>
+                                    <td>Blog.findById()</td>
+                                </tr>
+                                
+                                <tr class="warning">
+                                    <td>Update</td>
+                                    <td>/blogs/:id</td>
+                                    <td>PUT</td>
+                                    <td>Update the blog post and then redirect</td>
+                                    <td>Blog.findByIdAndUpdate()</td>
+                                </tr>
+                                
+                                <tr class="danger">
+                                    <td>Destroy</td>
+                                    <td>/dogs/:id</td>
+                                    <td>DELETE</td>
+                                    <td>Delete a post</td>
+                                    <td>Blog.findByIdAndRemove()</td>
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                </div>
+                
+            </div>
+            
+        </div>
+
+       
+    </body>
+</html>
